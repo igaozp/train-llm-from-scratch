@@ -7,6 +7,7 @@ docs_dir: docs
 # Files present under docs/ but intentionally not page nodes in the nav.
 not_in_nav: |
   /diagrams/README.md
+  /diagrams/README_zh.md
 # Keep the raw mermaid sources out of the built site.
 exclude_docs: |
   /diagrams/src/
@@ -69,6 +70,32 @@ extra_javascript:
 
 nav:
   - Home: README.md
+  - 中文文档:
+      - 首页: README_zh.md
+      - 基础知识:
+          - 概览: foundations/README_zh.md
+          - 分词与数据形状: foundations/tokenization_zh.md
+          - 仅解码器 Transformer: foundations/transformer_zh.md
+          - 注意力、掩码与头: foundations/attention_zh.md
+          - 目标函数、损失与困惑度: foundations/objectives_zh.md
+          - 优化与训练系统: foundations/optimization_zh.md
+          - 生成与采样: foundations/generation_zh.md
+      - 理论与流水线:
+          - 数据处理: 01_data_pipeline_zh.md
+          - 预训练: 02_pretraining_zh.md
+          - SFT: 03_sft_zh.md
+          - 奖励模型: 04_reward_model_zh.md
+          - DPO / ORPO / KTO: 05_dpo_zh.md
+          - PPO: 06_ppo_zh.md
+          - GRPO / RLVR: 07_grpo_zh.md
+      - 使用指南:
+          - JSON 配置: howto/configs_zh.md
+          - 训练（UI 与 CLI）: howto/train_zh.md
+          - 控制面板 UI: howto/ui_zh.md
+          - 评估: 08_evaluation_zh.md
+          - 推理 / 对话: 09_inference_zh.md
+      - 参考:
+          - 命令速查表: howto/commands_zh.md
   - Foundations:
       - Overview: foundations/README.md
       - Tokenization & Data Shapes: foundations/tokenization.md
